@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:aqua;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px; /* Adds space between the boxes */
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .gradient-box {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .linear-gradient {
+            background: linear-gradient(#dfa4c1 40px, #180cbc 100px, rgb(0, 255, 98));
+          
+        }
+
+        .radial-gradient {
+            background: radial-gradient(circle, #d4660b 10px, #d1fc25, #78ccf0 90px);
+        }
+
+        .conic-gradient {
+            background: conic-gradient(from 0deg, #ad5c26, #93b70f, #4fdbf1, #b7088e);
+        }
+        .containerr {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px; /* Adds space between the boxes */
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .gradient-boxx {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .linear-gradientt {
+            background: repeating-linear-gradient(#0ca2bc 40px, #a9f431 100px, rgb(35, 35, 238),#ff9a9a);
+          
+        }
+
+        .radial-gradientt {
+            background: repeating-radial-gradient(circle, #edaf11 10px, #d3ba1a , #54b0e4 60px);
+        }
+
+        .conic-gradientt {
+            background: repeating-conic-gradient(#9aadff, #5d0fb7, #08d348, #9a08b7);
+        }
+
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradients</h1>
+    <div class="container">
+        <div class="gradient-box linear-gradient">
+            Linear Gradient
+        </div><br>
+        <div class="gradient-box radial-gradient">
+            Radial Gradient
+        </div>
+        <div class="gradient-box conic-gradient">
+            Conic Gradient
+        </div>
+    </div>
+    <div class="containerr">
+        <div class="gradient-boxx linear-gradientt">
+            Linear Gradient
+        </div><br>
+        <div class="gradient-boxx radial-gradientt">
+            Radial Gradient
+        </div>
+        <div class="gradient-boxx conic-gradientt">
+            Conic Gradient
+        </div>
+    </div>
+</body>
+</html>
